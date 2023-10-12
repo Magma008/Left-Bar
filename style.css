@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main {
+    min-height: 100vh;
+    background: linear-gradient(53deg, navy, turquoise, blue);
+    padding-right: 20px;
+}
+
+.left_bar {
+    background: rgba(255, 255, 255, 0.4);
+    width: 0px;
+    min-height: 100vh;
+    transition: all .4s linear;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.close {
+    width: 50px;
+    transition: all .4s linear;
+}
+
+.color {
+    color: slateblue;
+}
+
+.logo {
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.icon {
+    background: rgba(128, 128, 128, 0.5);
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid white;
+    transition: all .5s linear;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.icon:hover {
+    transform: rotateY(360deg) scale(1.7);
+}
+
+.insta {
+    fill: #962fbf;
+}
+
+.facebook {
+    fill: #174dc2;
+}
+
+.telegram {
+    fill: #0088cc;
+}
+
+.twitter {
+    fill: #1DA1F2;
+}
+
+.youtube {
+    fill: #c4302b;
+}
+
+.lists {
+    display: flex;
+    flex-direction: column;
+}
+
+.lists li {
+    padding: 15px 40px;
+    list-style-type: none;
+    transition: all .3s linear;
+}
+
+.lists li a {
+    text-decoration: none;
+    color: midnightblue;
+    transition: all .3s linear;
+}
+
+.lists li:hover {
+    background: rgba(0, 0, 255, 0.7);
+    padding-left: 60px;
+}
+
+.lists .li:hover  a {
+    color: cyan;
+}
+
+.width {
+    width: 500px;
+}
+
+.open {
+    width: 60px;
+    transition: all .4s linear;
+}
+
+.arrow {
+    width: 40px;
+    animation: point 3s infinite;
+}
+
+.animateOpen {
+    transform: rotate(90deg);
+}
+
+@keyframes point {
+    0% {
+        transform: translateY(-15px) translate(10px);
+    }
+
+    50% {
+        transform: translateY(15px) translate(10px);
+    }
+
+    100% {
+        transform: translateY(-15px) translate(10px);
+    }
+}
+
+.animateClose {
+    transform: rotate(360deg);
+}
+
+.padding {
+    padding: 10px 20px;
+}
+
+.icons {
+    padding: 10px 20px;
+    padding-top: 250px;
+}
+
+@media screen and (min-width: 1400px) {
+    .icons {
+        padding-top: 300px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .icons {
+        padding-top: 400px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .icons {
+        padding-top: 500px;
+    }
+}
+
+@media screen and (min-width: 2400px) {
+    .icons {
+        padding-top:  900px;
+    }
+}
