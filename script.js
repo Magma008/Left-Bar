@@ -11,4 +11,5 @@ open.addEventListener("click", () => {
 close.addEventListener("click", () => {
     leftbar.classList.toggle("width")
     open.classList.toggle("animateOpen")
+    close.classList.toggle("animateClose")
 }) 
